@@ -1,0 +1,22 @@
+body {
+  padding-top: 50px;
+}
+footer {
+  background-color:black;
+  color:white;
+  padding: 10px;
+}
+nav {
+  background-color: pink;
+  padding: 15px 15px 0px 15px;
+}
+
+.about {
+  background-image:
+}
+.shadow {
+   font-family: 'Vast Shadow', serif;
+}  
+.footer {
+  text-color:white;
+}
