@@ -1,22 +1,55 @@
 body {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 footer {
   background-color:black;
   color:white;
+  padding: 15px;
+}
+form {
+  color:white;
+  font-size: 25px;
+  padding: 10px;
+}
+img {
+  border-color: white;
+  border-width: 4px;
   padding: 10px;
 }
 nav {
-  background-color: pink;
   padding: 15px 15px 0px 15px;
 }
-
-.about {
-  background-image:
+#portfolio {
+  background-color: white;
+}
+#about {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Oseberg_Wagon_detail_2.jpg/1280px-Oseberg_Wagon_detail_2.jpg");
+}
+#contact {
+  background-image:url(https://c1.staticflickr.com/4/3320/3341768026_858ed36dab_b.jpg);
 }
 .shadow {
    font-family: 'Vast Shadow', serif;
-}  
+   font-size: 40px;
+   text-shadow: 8px 8px 6px #000000;
+}
+.shadow2 {
+   font-family: 'Vast Shadow', serif;
+   font-size: 40px;
+  color: gray;
+}
+.nav-shadow {
+     font-family: 'Vast Shadow', serif;
+    font-size: 40px;
+}
 .footer {
   text-color:white;
+  link-text:pink;
+}
+a:hover {
+  color: gray;
+}
+.well {
+  opacity: 0.7;
+  width: 50%;
 }
