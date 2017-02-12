@@ -1,0 +1,18 @@
+function titleCase(str) {
+  str = str.toLowerCase().split(" ");
+  for (var i = 0; i < str.length; i++) {
+    splitStr = str[i].split("");
+    return letterStr;    
+    for (var j = 0; j < splitStr.length; j++) {
+      letterStr = str[j].split("");
+    }
+
+  }
+  splitStr[0] = splitStr[0].toUpperCase();
+  newStr = splitStr.join("");
+  return newStr;
+  //this capitalizes the first letter in an array of letters and makes it one word again.
+
+}
+
+titleCase("I'm a little tea pot");
