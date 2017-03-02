@@ -1,3 +1,4 @@
+//Quote database
 var testQuote = [
   {
     "name": "Malala Yousafzai",
@@ -45,16 +46,30 @@ var testQuote = [
     "id": 8   
   }];
 
+//quote variable defined
+var quote = "Quote loading...";
+
+
 //Grab a new quote!
 $(document).ready(function() {
+      var quoteNumber = selectRandomQuote(1, 7);
+      $(".quote").html('"' +  testQuote[quoteNumber].quote + '"');
+      $(".name").html('- ' + testQuote[quoteNumber].name);
+      quote = testQuote[quoteNumber].quote;
+      /*var QuoteURL = quoteToTweetURL(quote);
+      console.log(quoteURL);*/
     $("#newQuote").on("click", function(){
       var quoteNumber = selectRandomQuote(1, 7);
       $(".quote").html('"' +  testQuote[quoteNumber].quote + '"');
       $(".name").html('- ' + testQuote[quoteNumber].name);
+      quote = testQuote[quoteNumber].quote;
+    });
+    $("#tweetQuote").on("click", function() {
+      $("a").html(href="https://twitter.com/intent/tweet?text=Hello%20world");
     });  
   });
 
-//assign random number to i
+//grab random number to access quote array
    function selectRandomQuote(myMin, myMax) {
    return that = Math.floor(Math.random () * (myMax - myMin + 1)) + myMin;
       };
@@ -62,13 +77,13 @@ $(document).ready(function() {
 
 
 
+//Convert quote to Twitter share URL
+function quoteToTweetURL(quoteOnPage) {
+  return quoteOnPage.replace(/\s/gi, "20%");
+};
 
-//Tweet that quote!
-/*$(document).ready(function() {
-    $("#tweetQuote").on("click", function() {
-      
-    });
-});*/
+var testString = "The quick brown fox";
+console.log(quoteToTweetURL(testString));
 
 
 
