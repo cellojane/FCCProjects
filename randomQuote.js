@@ -1,5 +1,5 @@
 //Quote database
-var testQuote = [
+var quoteData = [
   {
     "name": "Malala Yousafzai",
     "quote": "I raise up my voice—not so I can shout, but so that those without a voice can be heard...we cannot succeed when half of us are held back.",
@@ -46,44 +46,34 @@ var testQuote = [
     "id": 8   
   }];
 
-//quote variable defined
-var quote = "Quote loading...";
 
-
-//Grab a new quote!
+//Load page with a random quote
 $(document).ready(function() {
-      var quoteNumber = selectRandomQuote(1, 7);
-      $(".quote").html('"' +  testQuote[quoteNumber].quote + '"');
-      $(".name").html('- ' + testQuote[quoteNumber].name);
-      quote = testQuote[quoteNumber].quote;
-      /*var QuoteURL = quoteToTweetURL(quote);
-      console.log(quoteURL);*/
-    $("#newQuote").on("click", function(){
-      var quoteNumber = selectRandomQuote(1, 7);
-      $(".quote").html('"' +  testQuote[quoteNumber].quote + '"');
-      $(".name").html('- ' + testQuote[quoteNumber].name);
-      quote = testQuote[quoteNumber].quote;
-    });
-    $("#tweetQuote").on("click", function() {
-      $("a").html(href="https://twitter.com/intent/tweet?text=Hello%20world");
-    });  
-  });
+    //Display a random quote and name on page load
+    selectRandomQuote(1, 7);
+    $(".quote").html('"' +  currentQuote + '"');
+    $(".name").html('- ' + currentName);
 
-//grab random number to access quote array
-   function selectRandomQuote(myMin, myMax) {
-   return that = Math.floor(Math.random () * (myMax - myMin + 1)) + myMin;
-      };
+});
+    
+//display random new quote when button is clicked 
+$("#newQuote").on("click", function() {
+    selectRandomQuote(1, 7);
+    $(".quote").html('"' +  currentQuote + '"');
+    $(".name").html('- ' + currentName);
+});
 
 
-
-
-//Convert quote to Twitter share URL
-function quoteToTweetURL(quoteOnPage) {
-  return quoteOnPage.replace(/\s/gi, "20%");
+//select a random quote and set new twitter link
+function selectRandomQuote(myMin, myMax) {
+  selector = Math.floor(Math.random () * (myMax - myMin + 1)) + myMin;
+  currentQuote = quoteData[selector].quote;
+  currentName = quoteData[selector].name;
+  twitterURL = ("https://twitter.com/intent/tweet?text=" + currentQuote.replace(/\s/gi, "%20") + " -" + currentName.replace(/\s/gi, "%20"));
+  var link = document.getElementById("twitter-button");
+  link.setAttribute("href", twitterURL);
 };
 
-var testString = "The quick brown fox";
-console.log(quoteToTweetURL(testString));
 
 
 
