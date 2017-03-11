@@ -1,0 +1,16 @@
+body {
+  background-color: pink;
+  margin: 30px;
+}
+h1 {
+  color: #3e284c;
+  font-family: 'Vast Shadow', cursive;
+}
+.name {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 30px;
+}
+.quote {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+}
