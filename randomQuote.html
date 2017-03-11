@@ -1,34 +1,47 @@
 <!--icons-->
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 <!--Twitter Script-->
-<script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
+<script>
+  window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+  
+    return t;
+  }(document, "script", "twitter-wjs"));
+</script>
 
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore|Montserrat|Vast+Shadow" rel="stylesheet">
 
-  return t;
-}(document, "script", "twitter-wjs"));</script>
 
-<h1>Random Quote Machine</h1>
-<p>Some text about this page.</p>
-<div class = "quote"><p>The quote will appear here.<p></div>
-<div>
-  <div class = "name"><p>Name</p></div>
-  <button id = "newQuote">New Quote</button></div>
-<div>
-  <button id = "tweetQuote">
-    <a class="twitter-button"
-  href="https://twitter.com/intent/tweet">
-Tweet Quote</a>
+<!--code displaying on page-->
+<h1 class="text-center">Feminist Quotes</h1>
+<div class="jumbotron">
+  <div class="quote container-fluid text-center">
+    <p>The quote will appear here.
+      <p>
+  </div>
+  <div class="name container-fluid text-right" style="margin:10px 60px 20px 0px;">
+    <p>Name</p>
+  </div>
+  <div class="container-fluid text-center"><button id="newQuote" type="button" class="btn btn-default btn-lg" style="margin-right:30px"><i class="fa fa-hand-rock-o" aria-hidden="true"></i>  Smash the patriarchy</button>
+    <button id="tweetQuote" class="btn btn-default btn-lg">
+    <a id="twitter-button"
+  href="https://twitter.com/intent/tweet?text=The%20quick%20brown%20fox"><i class="fa fa-venus" aria-hidden="true"></i>  Tweet Quote</a>
   </button></div>
-<footer><p>A page built by cellojane for FreeCodeCamp.</p></footer>
+</div>
+
+<footer>
+  <p class="text-center">A page built by <a href="https://github.com/cellojane">cellojane</a> for <a href="https://www.freecodecamp.com/cellojane"><i class="fa fa-free-code-camp" aria-hidden="true"></i>FreeCodeCamp</a>.</p>
+</footer>
