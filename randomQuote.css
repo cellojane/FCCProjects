@@ -1,10 +1,19 @@
 body {
-  background-color: pink;
+  background-image:url(http://www.publicdomainpictures.net/pictures/210000/velka/pink-fabric-textured-background.jpg);
   margin: 30px;
 }
 h1 {
   color: #3e284c;
   font-family: 'Vast Shadow', cursive;
+  margin:20px;
+  background-color:white;
+  padding: 20px;
+  border-radius: 50%;
+}
+button {
+  color: white;
+  background-color: #3e284c;
+  margin: 10px;
 }
 .name {
   font-family: 'La Belle Aurore', cursive;
@@ -13,4 +22,15 @@ h1 {
 .quote {
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
+}
+#twitter-button {
+  color: white;
+  text-decoration: none;
+}
+button:hover {
+  color: pink;
+}
+#twitter-button:hover {
+  color:pink;
+  text-decoration: none;
 }
