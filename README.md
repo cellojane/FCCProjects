@@ -5,4 +5,4 @@ See "tribute" project at http://codepen.io/cellojane/pen/VPKYpZ
 
 See "profile" project at http://codepen.io/cellojane/pen/VPpJJM
 
-See "quoteGenerator" project at http://codepen.io/cellojane/full/jBNXEZ/
+See "randomQuote" project at http://codepen.io/cellojane/full/jBNXEZ/
