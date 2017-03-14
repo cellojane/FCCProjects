@@ -27,14 +27,17 @@
   <div class="container text-center">
     <div class="about">
       <h1 class="shadow" style="color:white">Jane of all trades</h1>
-      <p style="color:white"><i class="fa fa-code" aria-hidden="true"></i> Developer <i class="fa fa-music" aria-hidden="true"></i> Musician <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Writer <i class="fa fa-ravelry" aria-hidden="true"></i> Knitter <i class="fa fa-motorcycle"
+      <p style="color:white" id="shadow"><i class="fa fa-code" aria-hidden="true"></i> Developer <i class="fa fa-music" aria-hidden="true"></i> Musician <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Writer <i class="fa fa-ravelry" aria-hidden="true"></i> Knitter <i class="fa fa-motorcycle"
           aria-hidden="true"></i> Motorcyclist <i class="fa fa-venus" aria-hidden="true"></i></p>
-      <div class="container well">
-        <p style="color:black">Developer in training, cellist for hire, freelance writer, and crafter who knows her way around a motorcycle. I've got you covered.</p>
+      <div class="row">
+        <div class="col-md-3 col-xs-2"></div>
+      <div class="container well col-md-6 col-xs-8">
+        <p style="color:black">Developer in training, cellist for hire, freelance writer, and crafter who knows her way around a motorcycle. </br>I've got you covered.</p>
         <div class="container-fluid">
           <h1><a href="https://www.linkedin.com/in/janeemcarter"  target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> <a href="https://github.com/cellojane"  target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="https://twitter.com/thejellyhalf" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></h1>
         </div>
       </div>
+      </div>  
     </div>
   </div>
 </div>
@@ -44,12 +47,12 @@
     <p class="text-center">See Jane code. Code, Jane, Code!</p>
     <div class="col-sm-4">
       <a href="http://codepen.io/cellojane/pen/VPKYpZ" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Nellie_Bly_2.jpg/220px-Nellie_Bly_2.jpg" class="img-circle center-block"></a>
-      <p class="text-center"><strong><a href="http://codepen.io/cellojane/pen/VPKYpZ" target="_blank">Tribute Page to Nellie Bly</a></strong></br><em>A  Bootstrap website</em></p>
+      <p class="text-center"><strong><a href="http://codepen.io/cellojane/pen/VPKYpZ" target="_blank">Tribute Page to Nellie Bly</a></strong></br><em>A  Bootstrap Website</em></p>
       <p>&nbsp;</p>
     </div>
     <div class="col-sm-4">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Nellie_Bly_2.jpg/220px-Nellie_Bly_2.jpg" class="img-circle center-block">
-      <p class="text-center">More projects coming soon!</p>
+      <a href="http://codepen.io/cellojane/pen/jBNXEZ" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Audre_Lorde.jpg/220px-Audre_Lorde.jpg" class="img-circle center-block"></a>
+      <p class="text-center"><strong><a href="http://codepen.io/cellojane/pen/jBNXEZ" target="_blank">Feminist Quote Generator</a></strong></br><em>A Bootstrap Website</br>(Pictured: Audre Lorde)</em></p>
     </div>
     <div class="col-sm-4">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Nellie_Bly_2.jpg/220px-Nellie_Bly_2.jpg" class="img-circle center-block">
@@ -61,36 +64,37 @@
   <div class="container text-center">
     <h1 class="shadow" style="color:white">Contact</h1>
   </div>
-  <!--form-->
-  <div class="container">
-    <div class="row col-md-2"></div>
-    <div class="row col-md-4">
-      <form class="form-horizontal">
-        <div class="form-group">
-          <label class="control-label" for="email">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter Email"></input>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="name">Your Name</label>
-          <input type="name" class="form-control" id="name" placeholder="FirstName LastName"></input>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="phone">Phone Number</label>
-          <input type="phone" class="form-control" id="phone" placeholder="XXX-XXX-XXXX"></input>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="project">Describe Your Project</label>
-          <textarea type="project" class="form-control" rows="4" id="project" placeholder="What can I help you with?"></textarea>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-    </div>
-    </form>
-    <div class="row col-md-6" style="padding-top:35px;">
-      <div class="container well">
-        <p>I would love to work on a project with you. Fill out the form to contact me, and I will get back to you as soon as possible.</p>
-      </div>
+<!--form-->
+<div class="container">
+  <div class="row col-md-2"></div>
+  <div class="row col-md-5" style="padding-top:35px;">
+    <div class="container well">
+      <p>I would love to work on a project with you. Fill out the form to contact me, and I will get back to you as soon as possible.</p>
     </div>
   </div>
+  <div class="row col-md-1"></div>
+  <div class="row col-md-4">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label" for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter Email"></input>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="name">Your Name</label>
+        <input type="name" class="form-control" id="name" placeholder="FirstName LastName"></input>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="phone">Phone Number</label>
+        <input type="phone" class="form-control" id="phone" placeholder="XXX-XXX-XXXX"></input>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="project">Describe Your Project</label>
+        <textarea type="project" class="form-control" rows="4" id="project" placeholder="What can I help you with?"></textarea>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+  </div>
+  </form>
+</div>
 </div>
 <!--footer-->
 <footer class="container-fluid">
